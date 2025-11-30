@@ -5,21 +5,26 @@ import { Button } from "@/components/ui/Button";
 export default function Home() {
   return (
     <NotebookLayout className="flex flex-col items-center justify-center text-center space-y-8 sm:space-y-12">
-      <div className="space-y-4">
-        <h1 className="text-3xl sm:text-5xl font-bold tracking-tighter font-handwriting border-b-4 border-neon-yellow inline-block pb-2">
-          16コミュニケーションタイプ診断
-        </h1>
-        <p className="text-xl sm:text-2xl font-bold mt-4">
-          あなたの『会話スタイル』には、名前がある。
-        </p>
-      </div>
+      <div className="space-y-6 z-10">
+        <div className="bg-white/80 p-6 rounded-lg border-2 border-dashed border-gray-400 shadow-lg transform rotate-1 max-w-lg mx-auto">
+          <p className="text-sm font-bold text-gray-500 mb-2 tracking-widest">
+            人間関係の「取扱説明書」
+          </p>
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-tighter font-handwriting text-ink mb-4">
+            16コミュニケーション<br />タイプ診断
+          </h1>
+          <p className="text-lg sm:text-xl font-bold text-gray-700 bg-neon-yellow/30 inline-block px-2 transform -rotate-1">
+            あなたの“コミュ力の型”には、名前がある。
+          </p>
+        </div>
 
-      <div className="max-w-md mx-auto p-6 border-2 border-ink bg-white/50 rotate-1 shadow-sm">
-        <p className="text-sm sm:text-base leading-relaxed font-medium">
-          性格の良し悪しではなく、<br />
-          あなたが無意識に使っている「会話の型」を可視化する。<br />
-          自分と相手のスタイルを知るための成分分析。
-        </p>
+        <div className="max-w-md mx-auto p-4 bg-white/90 notebook-border rotate-[-1deg]">
+          <p className="text-sm sm:text-base leading-relaxed font-medium text-gray-800">
+            性格じゃない。<br />
+            『どう喋るか・どう関わるか』のスタイルを<br />
+            16タイプで可視化します。
+          </p>
+        </div>
       </div>
 
       <div className="space-y-4">

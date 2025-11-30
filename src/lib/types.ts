@@ -7,13 +7,11 @@ export interface Question {
     direction: 1 | -1; // +1: Positive Pole (D, E, I, X), -1: Negative Pole (R, C, S, Z)
 }
 
-export interface Character {
+export type CommunicationTypeMeta = {
     code: string;
-    name: string;
-    catchphrase?: string; // Optional now as we use shortDescription
-    shortDescription: string;
-    description: string;
-}
+    label: string;
+    catchCopy: string;
+};
 
 export interface AxisResult {
     axis: AxisType;

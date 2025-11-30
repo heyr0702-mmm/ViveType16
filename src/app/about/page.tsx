@@ -12,42 +12,40 @@ export default function About() {
                 </Link>
             </div>
 
-            <section className="space-y-4">
-                <h2 className="text-xl font-bold bg-neon-yellow inline-block px-2 transform -rotate-1">
+            <section className="space-y-4 bg-white/80 p-6 notebook-border transform rotate-1">
+                <h2 className="text-xl font-bold bg-neon-yellow inline-block px-2 transform -rotate-1 mb-2">
                     About
                 </h2>
-                <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line font-medium text-gray-800">
                     人には、生まれ持った“性格”とは別に、
-                    会話のときに自然と現れる “スタイル（型）” があります。
+                    会話のときに自然と現れる“スタイル（型）”があります。
 
                     そのスタイルは、
-                    ひとりのとき、大人数のとき、仲の良い相手のとき——
+                    ひとりのとき、大人数のとき、
+                    仲の良い相手のとき——
                     相手や場面によって、少しずつ形を変わります。
 
-                    良い・悪いではなく、
+                    良い悪いではなく、
                     ただ“違い”として存在するもの。
 
                     16コミュニケーションタイプ診断は、
                     あなたが無意識に使っている
-                    話し方・返し方・関わり方のスタイル を可視化し、
-
-                    どんな相手と相性が良いか
-                    どんな場面でスタイルが変わりやすいか
-
+                    話し方・返し方・関わり方のスタイルを可視化し、
+                    どんな相手と相性が良く、どんな場面で変化しやすいか
                     を知るためのツールです。
                 </p>
             </section>
 
-            <section className="space-y-4">
-                <h2 className="text-xl font-bold bg-neon-blue inline-block px-2 transform rotate-1">
+            <section className="space-y-4 bg-white/80 p-6 notebook-border transform -rotate-1">
+                <h2 className="text-xl font-bold bg-neon-blue inline-block px-2 transform rotate-1 mb-2">
                     Vision
                 </h2>
-                <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line font-medium text-gray-800">
                     誰といるかで、
                     自分の“喋り方”が変わることがあります。
 
                     それは性格が揺れているのではなく、
-                    相手との「スタイルの組み合わせ」が変わるだけ。
+                    相手との“スタイルの組み合わせ”が変わるだけ。
 
                     違うスタイルが集まるからこそ、
                     会話は豊かになり、
@@ -55,10 +53,8 @@ export default function About() {
 
                     自分のスタイルを知り、
                     相手のスタイルを知る。
-
                     その小さな理解が、
-                    人と関わることを
-                    少し楽にしてくれるはずです。
+                    人と関わることを少し楽にしてくれるはずです。
                 </p>
             </section>
 

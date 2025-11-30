@@ -1,5 +1,5 @@
-import { CHARACTERS, QUESTIONS } from './constants';
-import { AxisResult, Character } from './types';
+import { COMMUNICATION_TYPE_META, QUESTIONS } from './constants';
+import { AxisResult, CommunicationTypeMeta } from './types';
 
 // Answers map: questionId -> score (-2 to +2)
 export type Answers = Record<number, number>;
@@ -17,6 +17,7 @@ export function calculateScores(answers: Answers): AxisResult[] {
         // q.direction is +1 or -1
         // answer is -2 to +2
         // score contribution = answer * direction
+        // If direction is -1 (Reversed), +2 answer becomes -2 score.
         const value = answer * q.direction;
         scores[q.axis] += value;
     });
@@ -62,7 +63,7 @@ function calculatePercentage(score: number): number {
     return Math.round(((score + 14) / 28) * 100);
 }
 
-export function determineCharacter(axisResults: AxisResult[]): Character {
+export function determineCharacter(axisResults: AxisResult[]): CommunicationTypeMeta {
     // Generate 4-letter code
     // Power: >=0 -> D, <0 -> R
     // Warmth: >=0 -> E, <0 -> C
@@ -77,5 +78,5 @@ export function determineCharacter(axisResults: AxisResult[]): Character {
         return '';
     }).join('');
 
-    return CHARACTERS.find(c => c.code === code) || CHARACTERS[0];
+    return COMMUNICATION_TYPE_META.find(c => c.code === code) || COMMUNICATION_TYPE_META[0];
 }
