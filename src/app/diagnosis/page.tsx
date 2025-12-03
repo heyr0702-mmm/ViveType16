@@ -68,7 +68,7 @@ export default function Diagnosis() {
 
             {/* Question */}
             <div className="flex-grow flex items-center justify-center py-8 sm:py-12 min-h-[200px]">
-                <div className="bg-white/90 p-8 rounded-lg notebook-border shadow-lg w-full flex items-center justify-center text-center transform rotate-1">
+                <div className="bg-white/90 p-8 rounded-lg notebook-border shadow-lg w-full flex items-center justify-center text-center">
                     <h2 className="text-xl sm:text-2xl font-bold leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-500 key={currentQuestion.id}">
                         {currentQuestion.text}
                     </h2>

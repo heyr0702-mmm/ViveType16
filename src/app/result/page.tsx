@@ -56,7 +56,7 @@ function ResultContent() {
     return (
         <NotebookLayout className="flex flex-col space-y-8 pb-20">
             {/* 🟢 Free Area */}
-            <div className="bg-white/90 p-6 rounded-lg notebook-border shadow-lg transform rotate-1 max-w-2xl mx-auto w-full relative overflow-hidden">
+            <div className="bg-white/90 p-6 rounded-lg notebook-border shadow-lg max-w-2xl mx-auto w-full relative overflow-hidden">
                 {/* Tape decoration */}
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-32 h-8 bg-white/50 border-l border-r border-gray-200 rotate-[-2deg] z-10 opacity-70"></div>
 
@@ -72,7 +72,7 @@ function ResultContent() {
                             </span>
                         ))}
                     </div>
-                    <p className="text-lg sm:text-xl font-bold mt-4 bg-neon-yellow/40 inline-block px-4 py-1 transform -rotate-1 rounded-sm">
+                    <p className="text-lg sm:text-xl font-bold mt-4 bg-neon-yellow/40 inline-block px-4 py-1 rounded-sm">
                         {content.free.catchCopy}
                     </p>
                 </div>
@@ -177,7 +177,7 @@ function ResultContent() {
                 ) : (
                     <div className="animate-in fade-in slide-in-from-top-4 duration-500 space-y-8">
                         {/* Communication Gaps */}
-                        <div className="bg-white/90 p-6 rounded-lg notebook-border shadow-lg transform -rotate-1">
+                        <div className="bg-white/90 p-6 rounded-lg notebook-border shadow-lg">
                             <div className="flex items-center gap-2 mb-4 border-b-2 border-gray-200 pb-2">
                                 <span className="text-2xl">⚠️</span>
                                 <h3 className="text-xl font-bold text-ink">{content.unlocked.communicationGaps.title}</h3>
@@ -193,7 +193,7 @@ function ResultContent() {
                         </div>
 
                         {/* Compatibility */}
-                        <div className="bg-white/90 p-6 rounded-lg notebook-border shadow-lg transform rotate-1">
+                        <div className="bg-white/90 p-6 rounded-lg notebook-border shadow-lg">
                             <div className="flex items-center gap-2 mb-4 border-b-2 border-gray-200 pb-2">
                                 <span className="text-2xl">💞</span>
                                 <h3 className="text-xl font-bold text-ink">相性分析</h3>
