@@ -12,8 +12,8 @@ export default function About() {
                 </Link>
             </div>
 
-            <section className="space-y-4 bg-white/80 p-6 notebook-border transform rotate-1">
-                <h2 className="text-xl font-bold bg-neon-yellow inline-block px-2 transform -rotate-1 mb-2">
+            <section className="space-y-4 bg-white/80 p-6 notebook-border">
+                <h2 className="text-xl font-bold bg-neon-yellow inline-block px-2 mb-2">
                     About
                 </h2>
                 <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line font-medium text-gray-800">
@@ -36,8 +36,35 @@ export default function About() {
                 </p>
             </section>
 
-            <section className="space-y-4 bg-white/80 p-6 notebook-border transform -rotate-1">
-                <h2 className="text-xl font-bold bg-neon-blue inline-block px-2 transform rotate-1 mb-2">
+            <section className="space-y-4 bg-white/80 p-6 notebook-border">
+                <h2 className="text-xl font-bold bg-neon-pink inline-block px-2 mb-2 text-white">
+                    4つの成分について
+                </h2>
+                <p className="text-sm sm:text-base leading-relaxed font-medium text-gray-800 mb-4">
+                    この診断では、あなたの会話スタイルを4つの成分で分析します。
+                </p>
+                <div className="space-y-4">
+                    <div className="border-l-4 border-neon-yellow pl-3">
+                        <h3 className="font-bold text-ink">⚡ Power (主導権)</h3>
+                        <p className="text-sm text-gray-600">会話のハンドルを握る力。「自分が決めるか、相手に任せるか」のバランス。</p>
+                    </div>
+                    <div className="border-l-4 border-neon-pink pl-3">
+                        <h3 className="font-bold text-ink">❤️ Warmth (温度感)</h3>
+                        <p className="text-sm text-gray-600">共感や感情の豊かさ。「論理で話すか、感情で話すか」の傾向。</p>
+                    </div>
+                    <div className="border-l-4 border-neon-blue pl-3">
+                        <h3 className="font-bold text-ink">🚀 Speed (テンポ)</h3>
+                        <p className="text-sm text-gray-600">会話のスピード感。「即レスで返すか、じっくり考えて返すか」のリズム。</p>
+                    </div>
+                    <div className="border-l-4 border-gray-500 pl-3">
+                        <h3 className="font-bold text-ink">🔊 Volume (主張)</h3>
+                        <p className="text-sm text-gray-600">自己主張の強さ。「はっきり言うか、察してもらうか」のスタンス。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="space-y-4 bg-white/80 p-6 notebook-border">
+                <h2 className="text-xl font-bold bg-neon-blue inline-block px-2 mb-2">
                     Vision
                 </h2>
                 <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line font-medium text-gray-800">
